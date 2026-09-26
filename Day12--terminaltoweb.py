@@ -2,7 +2,8 @@
 import streamlit as st
 import requests
 
-API_KEY = "sk-394f7c1ada594438a59f2716e440b727"
+#API_KEY = "sk-394f7c1ada594438a59f2716e440b727"
+API_KEY = st.secrets["DEEPSEEK_API_KEY"]  #streamlit 加密api写法
 
 SYSTEM_PROMPT = """你是一位资深简历优化专家，帮用户把简历改写得更专业。
 规则：
