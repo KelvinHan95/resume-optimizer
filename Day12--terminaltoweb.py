@@ -41,3 +41,4 @@ if st.button("开始优化"):            #创建按钮
             optimized = result["choices"][0]["message"]["content"]
             st.subheader("优化结果")
             st.write(optimized)
+            st.caption("Made by hzx | 免费试用，有问题反馈随时说")
